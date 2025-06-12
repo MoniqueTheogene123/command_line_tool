@@ -7,3 +7,4 @@ rows << ['Data 3', 'Value C']
 
 table = Terminal::Table.new :rows => rows
 puts table
+
