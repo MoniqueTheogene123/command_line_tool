@@ -24,6 +24,10 @@ class TodoList
 	end
 end
 
+remove_task
+
+
+remove_task
 
 
 require "date"

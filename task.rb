@@ -5,8 +5,6 @@ class Task
 end
 
 
-
-
 :today_date
 
 :name
