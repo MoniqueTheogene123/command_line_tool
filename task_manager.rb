@@ -1,19 +1,23 @@
 class Task
-    attr_accessor :category, :name, :today_date, :due_date, :priority
+    attr_accessor :today_date, :name, :start_date, :end_date :due_date, :priority
 
 
 end
 
-:category
-work
-school
-personal
+
+
+
+:today_date
 
 :name
 f_name
 l_name
 
-:today_date
+:start_date
+calendar
+
+:end_date
+calendar
 
 :due_date
 today
@@ -24,9 +28,9 @@ next_month
 
 
 :priority
-low
-medium
-high
+low (green)
+medium (yellow)
+high (red)
 
 
 
