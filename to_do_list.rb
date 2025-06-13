@@ -1,48 +1,61 @@
-class TodoList
-	def initialize
-	@tasks = []
-	end
+
+
+
+
+
+
+
+
+
+
+
+
+
+# class TodoList
+# 	def initialize
+# 	@tasks = []
+# 	end
 	
-	def add_task(task)
-		@tasks << task
-	end
+# 	def add_task(task)
+# 		@tasks << task
+# 	end
 	
-	def remove_task(task)
-		if @tasks.include?(task)
-			@tasks.delete(task)
-		else
-			puts "Task not found"
-		end
-	end
+# 	def remove_task(task)
+# 		if @tasks.include?(task)
+# 			@tasks.delete(task)
+# 		else
+# 			puts "Task not found"
+# 		end
+# 	end
 
-	def display_tasks
-		if @tasks.empty?
-			puts "No tasks in the list"
-		else
-			@tasks.each { |task| puts task }
-		end
-	end
-end
+# 	def display_tasks
+# 		if @tasks.empty?
+# 			puts "No tasks in the list"
+# 		else
+# 			@tasks.each { |task| puts task }
+# 		end
+# 	end
+# end
 
-remove_task
-
-
-remove_task
+# remove_task
 
 
-require "date"
-t = Date.today
-pp "#{t.year} #{t.month}, #{t.day}"
+# remove_task
 
 
-
-def due_date
-    puts start_date - end_date (end_date = due_date)
-     #TODO if due_date then today tomorrow, this_week, next_week, next_month
-end
+# require "date"
+# t = Date.today
+# pp "#{t.year} #{t.month}, #{t.day}"
 
 
 
-def output
-   puts name, task, today_date, due_date, priority
-end
+# def due_date
+#     puts start_date - end_date (end_date = due_date)
+#      #TODO if due_date then today tomorrow, this_week, next_week, next_month
+# end
+
+
+
+# def output
+#    puts name, task, today_date, due_date, priority
+# end
