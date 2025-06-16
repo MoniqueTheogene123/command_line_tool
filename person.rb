@@ -35,14 +35,6 @@
 # end
 
 
-
-
-require "date"
-t = Date.today
-pp "#{t.year}/#{t.month}/#{t.day}"
-
-
-
 class Person
     attr_accessor :f_name, :l_name
     def initialize(f_name = nil, l_name = nil)
@@ -55,8 +47,7 @@ class Person
     end
 end
 
-today_date = Date.new
-pp today_date
+
 
 person1 = Person.new
 person1.f_name = "Monique"
@@ -66,5 +57,5 @@ person2 = Person.new("John", "Smith")
 
 puts person2.l_name
 puts person1.f_name
-puts #{person}
+
 
