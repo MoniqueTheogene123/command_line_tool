@@ -47,10 +47,9 @@ class Person
     end
 
     def full_name
-        "#{f_name} #{l_name}.chomp"
+        "#{f_name} #{l_name}"
     end
 end
-
 
 # person2 = Person.new("John", "Smith")
 # puts person2.full_name
