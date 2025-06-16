@@ -14,12 +14,11 @@ person.l_name = gets.chomp
 pp "Please enter your task: "
 task.detail = gets.chomp
 
-puts "#{person.full_name} #{task.created_at} #{task.detail} "
-
-
+puts "\n\n'NewEntry: #{person.full_name} #{task.created_at} #{task.detail}'"
 
 rows = []
 rows << ['person', 'date_series', 'task']
 rows << [person.full_name, task.created_at, task.detail]
 table = Terminal::Table.new :rows => rows
 puts table
+
