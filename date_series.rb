@@ -5,25 +5,31 @@ require "date"
 # pp new_date
 # pp new_date.class
 
-class Date_series
-    attr_accessor :t_date
-    def initialize(t_date = nil)
-        @t_date = t_date
-    end
+# class Date_series
+#     attr_accessor :t_date
+#     def initialize(t_date = nil)
+#         @t_date = t_date
+#     end
 
-    def today_date
-         "#{t_date.year}/#{t_date.month}/#{t_date.day}"
-    end
-end
+#     def today_date
+#          "#{t_date.year}/#{t_date.month}/#{t_date.day}"
+#     end
+# end
 
 
-date1 = Date_series.new
-date1.t_date = "2025"
+# date1 = Date_series.new
+# date1.t_date = "2025"
 
-puts date1.t_date
-puts date1.class
+# puts date1.t_date
+# puts date1.class
 
 
 
 # today = Date.new
 # pp "#{today}"
+
+#pp Date.parse("20010203")
+# puts date1.today_date
+# puts date1.class
+
+

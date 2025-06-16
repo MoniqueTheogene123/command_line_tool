@@ -34,28 +34,26 @@
 #     end
 # end
 
+# person1 = Person.new
+# person1.f_name = "Monique"
+# person1.l_name = "Theogene"
+
 
 class Person
     attr_accessor :f_name, :l_name
-    def initialize(f_name = nil, l_name = nil)
+    def initialize(f_name, l_name)
         @f_name = f_name
         @l_name = l_name
     end
 
     def full_name
-        "#{f_name} #{l_name}"
+        "#{f_name} #{l_name}.chomp"
     end
 end
 
 
+# person2 = Person.new("John", "Smith")
+# puts person2.full_name
 
-person1 = Person.new
-person1.f_name = "Monique"
-person1.l_name = "Theogene"
-
-person2 = Person.new("John", "Smith")
-
-puts person2.l_name
-puts person1.f_name
 
 
