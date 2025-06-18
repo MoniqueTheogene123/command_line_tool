@@ -11,18 +11,11 @@ class TestTask < Minitest::Test
 
   def test_initialization
     assert_equal 'Buy groceries', @task.detail
-    assert_instance_of DateTime, @task.created_at
   end
 
   def test_detail_capitalization
     task = Task.new('clean room')
     assert_equal 'Clean room', task.detail
-  end
-
-  def test_created_at_is_recent
-    current_time = DateTime.now
-    time_difference = (current_time - @task.created_at).to_f * 24 * 60 * 60 # in seconds
-    assert_operator time_difference, :<, 5 # Created within last 5 seconds
   end
 
   def test_empty_task

@@ -1,8 +1,4 @@
 
-
-
-
-
 # taskList Functional Specification
 Functional Requirement : creates todo list, user can input as many tasks as they like and they are saved
 

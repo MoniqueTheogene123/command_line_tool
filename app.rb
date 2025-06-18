@@ -2,8 +2,6 @@ require "terminal-table"
 require_relative "person"
 require_relative "task"
 require "date"
-require_relative "./test_person"
-require_relative "./test_task"
 
 all_user_inputs = []
 
@@ -30,7 +28,7 @@ loop do
   all_user_inputs << user_entry
 
   print "Do you want to add another entry/task? (yes/no) "
-  break if gets.chomp.downcase != "yes"
+    break if gets.chomp.downcase != "yes"
 end
 
 rows = []
@@ -42,3 +40,5 @@ end
 table = Terminal::Table.new :rows => rows
 puts "\n\nAll Entries: \n"
 puts table
+
+
