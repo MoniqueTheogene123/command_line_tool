@@ -1,6 +1,6 @@
 require "terminal-table"
-require_relative "person"
-require_relative "task"
+require_relative "../person"
+require_relative "../task"
 require "date"
 require "minitest/autorun"
 

@@ -1,18 +1,16 @@
 
-# taskList Functional Specification
-Functional Requirement : creates todo list, user can input as many tasks as they like and they are saved
+# Introduction
+Creates a todo list.  Within 1 session, user can input as many tasks as they like by answers questions within the terminal.  When they are finished inputting tasks, a nice table will formulate with the contents they entered.  The date will autopopulate
 
-## User Stories
 
-### Basic Operations
-- as a developer, i want to be able to create todo list to track tasks
-
-### Continuous Operations
-- As a user, I want to perform multiple calculations without restarting the application, so that I can use the calculator efficiently.
+# User Stories
+ As a user, I want to be able to create todo list to track tasks
 
 ### Functional Requirements
-- The calculator must prompt the user for an operation (addition and subtraction).
-- The calculator must prompt the user for two numbers to perform the operation on.
-- The calculator must display the result of the operation.
-- The calculator must handle invalid input gracefully (e.g., non-numeric input).
-- The calculator must allow the user to perform another calculation after one completes.
+- The app prompts user for first name
+- The app prompts user for last name
+- The app prompts user to "add a task"
+---
+- The app prompts user "if they are finished with entering tasks"
+- If yes (finished) then, a table is visible in terminal that shows entry
+- If no (not finsihed) then, the app loops and prompts user for first_name.
