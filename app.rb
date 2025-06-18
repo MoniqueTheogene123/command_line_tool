@@ -3,47 +3,42 @@ require_relative "person"
 require_relative "task"
 require "date"
 
-person = Person.new(@f_name, @l_name)
-task = Task.new(@detail, @created_at)
+all_user_inputs = []
 
-# person1 = Hash.new
-# person1.store(:f_name, "Sun")
-# person1.store(:l_name, "Shine")
-# person1.store(:created_at, Date.today.to_s)
-# person1.store(:detail, "task")
+loop do
+    print "whats your first name:   "
+    f_name = gets.chomp.capitalize
 
-# event_hash = {}
-# pp person1.keys
-# pp person1.values
+    print "whats your last name:   "
+    l_name = gets.chomp.capitalize
 
+    print "please enter your task:  "
+    task_detail = gets.chomp.capitalize
 
+    #creating instance
+    person = Person.new(f_name, l_name)
+    task = Task.new(task_detail)
 
-user_input_all = {}
-print "whats your first name:   "
-user_input_all["person.f_name"] = gets.chomp.capitalize
+    user_entry = {
+        "full_name" => person.full_name,
+        "created_at" => task.created_at.to_s,
+        "task" => task.detail
+    }
+    
+    all_user_inputs << user_entry
 
-print "whats your last name:   "
-user_input_all["person.l_name"] = gets.chomp.capitalize
-
-print "please enter your task:  "
-user_input_all["task.detail"] = gets.chomp.capitalize
-
-
-
-user_input_all["full_name"] = full_name
-user_input_all["created_at"] = created_at
-user_input_all["details"] = details
-puts user_input_all
-
-
-
-
-puts "\n\n'NewEntry: #{person.full_name} #{task.detail}'"
+    print "Do you want to add another entry/task?(yes/no)"
+    break if gets.chomp.downcase != "yes"
+end
 
 
 rows = []
-rows << ['person', 'date_series', 'task']
-rows << [person.full_name, task.created_at, task.detail]
+rows << ['Person', 'Date Created', 'Task']
+all_user_inputs.each do |user_entry|
+    rows << [user_entry["full_name"], user_entry["created_at"], user_entry["task"]]
+end
+
 table = Terminal::Table.new :rows => rows
+puts "\n\nAll Entries: \n\n"
 puts table
 
